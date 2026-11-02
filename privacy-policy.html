@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy · Amble Couples</title>
+<meta name="description" content="How Amble Couples collects, uses and protects your information. Your memories are shared only with your partner. No ads, no selling, no trackers.">
+<meta name="theme-color" content="#F7F3ED" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121A15" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet">
+<style>
+:root {
+    --bg: #F7F3ED;
+    --surface: #FFFDF9;
+    --ink: #1F2A23;
+    --muted: #5C695F;
+    --forest: #224632;
+    --sage: #608B65;
+    --sage-soft: #E7EEE3;
+    --line: #E6DFD4;
+    --fill: #FBEBC0;
+    --shadow: 0 1px 2px rgba(34, 70, 50, 0.05), 0 10px 28px rgba(34, 70, 50, 0.06);
+    color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #121A15;
+        --surface: #18221B;
+        --ink: #E9E5DC;
+        --muted: #A3AEA5;
+        --forest: #D3E5D1;
+        --sage: #8DBA93;
+        --sage-soft: #1F2D23;
+        --line: #2A372D;
+        --fill: #4A3F1E;
+        --shadow: none;
+        color-scheme: dark;
+    }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 84px; }
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+a { color: var(--sage); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--forest); }
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    -webkit-backdrop-filter: saturate(1.4) blur(14px);
+    backdrop-filter: saturate(1.4) blur(14px);
+    border-bottom: 1px solid var(--line);
+}
+.topbar-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--forest);
+    text-decoration: none;
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 19px;
+    white-space: nowrap;
+}
+.brand svg { width: 30px; height: 30px; flex: none; }
+.brand .half-a { stroke: var(--sage); }
+.brand .half-b { stroke: var(--forest); }
+.nav { display: flex; gap: 4px; }
+.nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 999px;
+}
+.nav a[aria-current="page"] { background: var(--sage-soft); color: var(--forest); }
+main { max-width: 760px; margin: 0 auto; padding: 0 16px 72px; }
+.hero { padding: 48px 0 28px; }
+.eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sage);
+    background: var(--sage-soft);
+    padding: 5px 12px;
+    border-radius: 999px;
+}
+h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(38px, 9vw, 54px);
+    line-height: 1.06;
+    letter-spacing: -0.01em;
+    color: var(--forest);
+    margin: 18px 0 14px;
+}
+h1 em { font-style: italic; font-weight: 500; color: var(--sage); }
+.lead { font-size: 19px; color: var(--muted); margin: 0 0 16px; max-width: 60ch; }
+.meta { font-size: 14px; color: var(--muted); margin: 0; }
+.glance {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    gap: 12px;
+    margin: 4px 0 28px;
+}
+.card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: var(--shadow);
+}
+.card h3 { margin: 12px 0 4px; font-size: 16px; line-height: 1.35; color: var(--forest); }
+.card p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--muted); }
+.icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background: var(--sage-soft);
+    color: var(--sage);
+    display: grid;
+    place-items: center;
+}
+.icon svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.toc {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 18px 20px 14px;
+    margin-bottom: 12px;
+}
+.toc-title {
+    margin: 0 0 8px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+.toc ol { margin: 0; padding-left: 1.4em; columns: 2 240px; column-gap: 28px; }
+.toc li { margin: 0 0 6px; break-inside: avoid; font-size: 15px; }
+.toc li::marker { color: var(--sage); font-weight: 600; }
+.toc a { color: var(--ink); text-decoration: none; }
+.toc a:hover { color: var(--sage); text-decoration: underline; }
+section { padding-top: 8px; }
+h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(25px, 5.6vw, 31px);
+    line-height: 1.2;
+    color: var(--forest);
+    margin: 44px 0 12px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+h2 .num { font-size: 0.68em; font-weight: 500; color: var(--sage); min-width: 1.4em; }
+h3 { font-size: 18px; line-height: 1.35; color: var(--forest); margin: 28px 0 6px; }
+p { margin: 0 0 14px; }
+ul, ol { padding-left: 1.3em; margin: 0 0 14px; }
+li { margin: 6px 0; }
+li::marker { color: var(--sage); }
+strong { color: var(--forest); font-weight: 600; }
+.table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: var(--surface);
+    margin: 16px 0 18px;
+}
+table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.5; }
+th, td { text-align: left; vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+th {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--sage-soft);
+}
+tr:last-child td { border-bottom: 0; }
+td:first-child { font-weight: 600; color: var(--forest); width: 32%; min-width: 120px; }
+.note {
+    background: var(--sage-soft);
+    border-radius: 16px;
+    padding: 16px 18px;
+    margin: 18px 0;
+}
+.note p:last-child, .note ul:last-child { margin-bottom: 0; }
+.fill { background: var(--fill); border-radius: 4px; padding: 0 4px; }
+.steps { counter-reset: step; list-style: none; padding: 0; }
+.steps li { counter-increment: step; position: relative; padding-left: 40px; margin: 10px 0; }
+.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--forest);
+    color: var(--bg);
+    font-size: 14px;
+    font-weight: 600;
+    display: grid;
+    place-items: center;
+}
+footer { border-top: 1px solid var(--line); }
+.footer-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 28px 16px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: var(--muted);
+}
+.footer-inner nav { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.footer-inner a { color: var(--muted); }
+.tagline { font-family: "Fraunces", Georgia, serif; font-style: italic; color: var(--sage); font-size: 16px; }
+@media (max-width: 380px) {
+    .brand { font-size: 17px; gap: 8px; }
+    .brand svg { width: 26px; height: 26px; }
+    .nav a { padding: 6px 10px; font-size: 14px; }
+}
+@media print {
+    .topbar { position: static; }
+    body { background: #fff; }
+    .card, .toc, .table-wrap { box-shadow: none; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+    <div class="topbar-inner">
+        <a class="brand" href="https://amblecouples.app">
+            <svg viewBox="0 0 32 32" fill="none" stroke-width="2.6" stroke-linecap="round" aria-hidden="true">
+                <path d="M16 27C6.5 20.5 3 15 3 10.5 3 6.9 5.8 4 9.2 4 12.2 4 14.6 5.9 16 9" class="half-a"/>
+                <path d="M16 9c1.4-3.1 3.8-5 6.8-5C26.2 4 29 6.9 29 10.5 29 15 25.5 20.5 16 27" class="half-b"/>
+            </svg>
+            Amble Couples
+        </a>
+        <nav class="nav" aria-label="Legal">
+            <a href="https://amblecouples.app/privacy" aria-current="page">Privacy</a>
+            <a href="https://amblecouples.app/terms">Terms</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="hero">
+        <span class="eyebrow">Privacy</span>
+        <h1>Privacy <em>Policy</em></h1>
+        <p class="lead">Amble Couples is a private space for the two of you. This policy explains, in plain words, what we collect, why we need it, who helps us run the app, and the choices you have.</p>
+        <p class="meta">Last updated: November 2, 2026</p>
+    </div>
+
+    <div class="glance">
+        <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.1 4.1 0 0 1 12 7.4a4.1 4.1 0 0 1 7.5 2.4C19.5 15.4 12 20 12 20z"/></svg></div>
+            <h3>Just the two of you</h3>
+            <p>What you add lives in a private space only you and your partner can open. Nobody else can see it.</p>
+        </div>
+        <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.4-3 8.2-7 10-4-1.8-7-5.6-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <h3>No ads, no selling</h3>
+            <p>We never sell your data or show ads, and Amble has no advertising or analytics trackers.</p>
+        </div>
+        <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="5"/><circle cx="16" cy="12" r="2.5"/></svg></div>
+            <h3>You choose what's shared</h3>
+            <p>Your local time, weather and battery are shared only if you switch them on, and you can switch them off any time.</p>
+        </div>
+        <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></div>
+            <h3>Delete whenever you like</h3>
+            <p>Profile → Delete account removes your account and what you added, right in the app.</p>
+        </div>
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+        <p class="toc-title">On this page</p>
+        <ol>
+            <li><a href="#who-we-are">Who we are</a></li>
+            <li><a href="#what-we-collect">Information we collect</a></li>
+            <li><a href="#how-we-use">How we use it</a></li>
+            <li><a href="#legal-bases">Legal bases</a></li>
+            <li><a href="#who-sees">Who can see it</a></li>
+            <li><a href="#unpairing">Unpairing</a></li>
+            <li><a href="#retention">How long we keep it</a></li>
+            <li><a href="#delete">Deleting your account</a></li>
+            <li><a href="#rights">Your rights and choices</a></li>
+            <li><a href="#security">How we protect it</a></li>
+            <li><a href="#transfers">International transfers</a></li>
+            <li><a href="#children">Children</a></li>
+            <li><a href="#permissions">Phone permissions</a></li>
+            <li><a href="#changes">Changes to this policy</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ol>
+    </nav>
+
+    <section id="who-we-are">
+        <h2><span class="num">1</span>Who we are</h2>
+        <p>Amble Couples ("Amble", "we", "us") is made by <span class="fill">[Your legal name or company name]</span>, <span class="fill">[Postal address]</span>. We are responsible for (the "controller" of) the personal information described in this policy.</p>
+        <p>This policy covers the Amble Couples apps for iPhone and Android, their home-screen widgets and our website at <a href="https://amblecouples.app">amblecouples.app</a>. You can reach us any time at <a href="mailto:support@amblecouples.app">support@amblecouples.app</a>.</p>
+    </section>
+
+    <section id="what-we-collect">
+        <h2><span class="num">2</span>Information we collect</h2>
+        <p>We only collect what Amble needs to work. Here is all of it.</p>
+
+        <h3>2.1 Your account</h3>
+        <ul>
+            <li>Your <strong>email address</strong> and <strong>password</strong> if you sign up with email. Passwords are stored only in a scrambled (hashed) form, so we can't read them.</li>
+            <li>If you sign in with <strong>Google</strong> or <strong>Apple</strong>, we receive your name, email address and an account ID from them. Apple lets you hide your email, in which case we only get a private relay address.</li>
+            <li>One-time codes we email you to confirm your address or reset your password.</li>
+            <li>An account ID that we create for you.</li>
+        </ul>
+
+        <h3>2.2 Your profile</h3>
+        <ul>
+            <li>Your first and last name, your nickname and the nickname you use for your partner.</li>
+            <li>Your birthday and love languages, if you add them.</li>
+            <li>Your gender and age range, if you choose to answer when you start. Your partner can't see them.</li>
+            <li>Your profile photo, if you add one.</li>
+            <li>The date you got together and your answers to the "How we began" questions, if you answer them.</li>
+            <li>Your time zone, so reminders and notifications arrive at the right time for you.</li>
+        </ul>
+
+        <h3>2.3 What you create together</h3>
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Part of the app</th><th>What we store</th></tr></thead>
+                <tbody>
+                    <tr><td>Memory book</td><td>Chapters and moments with their text and dates, photos, voice notes, and the hearts you give them.</td></tr>
+                    <tr><td>Draw</td><td>Doodles, photo doodles, replies, hearts, and whether a doodle has been seen. When you draw live together, your strokes travel between your phones in real time.</td></tr>
+                    <tr><td>Home</td><td>Your mood, your answers to the daily question and "thinking of you" taps.</td></tr>
+                    <tr><td>Us</td><td>Letters (and the day they can be opened), songs (title, artist and your note) and your cheat sheet.</td></tr>
+                    <tr><td>Dreams</td><td>Dreams and their steps, cover photos, "me too", the dream you've pinned, and your swipes on idea packs.</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="note">
+            <p><strong>Some things stay private even from your partner:</strong> your swipes on idea packs (until you both say yes), secret dreams (until you reveal them) and the words of a sealed letter (until the day it opens).</p>
+        </div>
+        <p>The cheat sheet has an optional <strong>Allergies</strong> field. If you fill it in, that may count as health information. We only use it to show it to your partner, and you can clear it any time.</p>
+
+        <h3>2.4 Things you choose to share with your partner</h3>
+        <p>Each of these has its own switch in the app, and nothing is shared until you turn it on.</p>
+        <ul>
+            <li><strong>Local time:</strong> your time zone, so your partner can see what time it is for you.</li>
+            <li><strong>Weather:</strong> the city you type in. To get the weather, the app sends only that city name to Open-Meteo. We don't use GPS and never ask for location access.</li>
+            <li><strong>Battery:</strong> your phone's battery level and whether it's charging.</li>
+        </ul>
+        <p><strong>Heartbeat touch</strong> makes your partner's phone pulse while you hold the heart. We only send the fact that you're holding it. We don't measure your heart rate or any other health data.</p>
+        <p><strong>Spicy questions:</strong> we store whether your Spicy questions switch is on. Your partner can see it, because these spicy romantic questions only appear when you both turn it on.</p>
+
+        <h3>2.5 Your device and notifications</h3>
+        <ul>
+            <li>A push notification token from Apple or Google, plus your phone's platform, app version and language, so notifications reach the right phone.</li>
+            <li>Your notification settings and quiet hours.</li>
+            <li>A scrambled key for each home-screen widget, so it can show your latest doodle.</li>
+        </ul>
+
+        <h3>2.6 Purchases</h3>
+        <p>If you buy Amble Premium, Apple or Google handles the payment. We and RevenueCat (our subscription provider) receive your plan, its status, its start, renewal and end dates, and the store's transaction IDs. We never see your card or bank details.</p>
+
+        <h3>2.7 When you contact us</h3>
+        <p>Your email address and whatever you choose to tell us.</p>
+
+        <h3>2.8 When you delete your account</h3>
+        <p>You can tell us why you're leaving. That reason is saved without your name, email or account ID.</p>
+
+        <h3>2.9 Technical logs</h3>
+        <p>Like most online services, our servers record basic technical details when the app talks to them, such as your IP address, the time, your account ID and any errors. We use them to keep Amble secure and to fix problems.</p>
+
+        <div class="note">
+            <p><strong>What we don't collect:</strong> your precise location, your contacts, your browsing history or advertising IDs. Amble has no ads, no analytics and no crash-tracking tools.</p>
+        </div>
+    </section>
+
+    <section id="how-we-use">
+        <h2><span class="num">3</span>How we use your information</h2>
+        <ul>
+            <li><strong>To run Amble:</strong> create your account, sign you in, pair you with your partner, store and sync what you add, and show it on both phones and your widgets.</li>
+            <li><strong>To send the notifications you allow,</strong> like "Sam sent you a doodle", while respecting your quiet hours.</li>
+            <li><strong>To understand who uses Amble:</strong> we look at gender and age ranges only as totals, to make Amble better for the people who use it.</li>
+            <li><strong>To provide Premium:</strong> check whether your couple has Premium and apply the free plan's limits.</li>
+            <li><strong>To keep Amble safe:</strong> prevent abuse (for example, limiting how often pairing codes can be tried), protect accounts and fix bugs.</li>
+            <li><strong>To talk to you:</strong> send sign-in codes, answer your emails and tell you about important changes. We don't send marketing emails.</li>
+            <li><strong>To follow the law</strong> when it requires us to keep or share information.</li>
+        </ul>
+        <p>We don't use your memories, photos or messages to build advertising profiles or to train AI models, and we don't use them for anything other than running Amble for the two of you.</p>
+    </section>
+
+    <section id="legal-bases">
+        <h2><span class="num">4</span>Legal bases</h2>
+        <p>If you live in the European Economic Area, the UK or Switzerland, we rely on these legal bases:</p>
+        <ul>
+            <li><strong>Contract:</strong> most of what we do is needed to give you the app you signed up for.</li>
+            <li><strong>Consent:</strong> for optional things, such as notifications, sharing your time, weather and battery, your profile photo, and your gender and age range. For the Allergies field, filling it in is your explicit consent. You can withdraw consent at any time in the app.</li>
+            <li><strong>Legitimate interests:</strong> keeping Amble secure, preventing abuse, fixing bugs, and learning from the reasons people give when they leave. We always weigh these against your rights.</li>
+            <li><strong>Legal obligation:</strong> when the law requires us to keep or share information.</li>
+        </ul>
+    </section>
+
+    <section id="who-sees">
+        <h2><span class="num">5</span>Who can see your information</h2>
+
+        <h3>5.1 Your partner</h3>
+        <p>Amble is built for sharing with one person. When you're paired, your partner can see what you add to your shared space, your profile (name, nicknames, photo, birthday and love languages) and anything you've switched on under what you share.</p>
+        <p>Please only add things you're happy for your partner to see. Like any message, they can save or screenshot what you share, and we can't control that.</p>
+
+        <h3>5.2 The services that help us run Amble</h3>
+        <p>These providers process information only on our behalf, only to provide their service, and under contracts that protect it.</p>
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Provider</th><th>What they do and what they receive</th></tr></thead>
+                <tbody>
+                    <tr><td>Supabase</td><td>Our database, sign-in, file storage, live sync and server functions, running on Amazon Web Services. Stores the information described in section 2.</td></tr>
+                    <tr><td>Google Firebase Cloud Messaging and Apple Push Notification service</td><td>Deliver notifications. They receive your push token and the notification text, for example your partner's name and "sent you a doodle".</td></tr>
+                    <tr><td>RevenueCat</td><td>Manages subscriptions. Receives your account ID and purchase details.</td></tr>
+                    <tr><td>Apple App Store and Google Play</td><td>Handle downloads and payments under their own privacy policies.</td></tr>
+                    <tr><td>Google Sign-In and Sign in with Apple</td><td>Confirm who you are, only if you choose to sign in with them.</td></tr>
+                    <tr><td>Open-Meteo</td><td>Provides the weather. Receives only the city name you typed and, like any website, your device's IP address.</td></tr>
+                    <tr><td>Our email delivery provider</td><td>Sends sign-in and password reset codes. Receives your email address and the code.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>5.3 Legal reasons</h3>
+        <p>We may share information if the law requires it, to respond to a valid legal request, or to protect the safety, rights or property of our users, the public or Amble. Where the law allows, we'll tell you first.</p>
+
+        <h3>5.4 If Amble changes hands</h3>
+        <p>If Amble is merged, sold or reorganised, your information may move to the new owner, who must keep protecting it as this policy describes. We'll let you know before that happens.</p>
+
+        <div class="note">
+            <p><strong>We never sell your personal information</strong> and never share it for targeted advertising.</p>
+        </div>
+    </section>
+
+    <section id="unpairing">
+        <h2><span class="num">6</span>Unpairing and your shared space</h2>
+        <ul>
+            <li>Either of you can unpair from <strong>Profile</strong> at any time. It ends the connection for both of you straight away, and neither of you can see the shared book, doodles, letters, songs or dreams any more.</li>
+            <li>We keep the shared space for <strong>30 days</strong> in case you change your mind. If the two of you pair again within that time, everything comes back.</li>
+            <li>After 30 days, the shared space and all of its photos, voice notes and doodles are <strong>permanently deleted</strong>.</li>
+            <li>Your own things stay with your account: your profile, mood, cheat sheet, sharing switches, idea swipes, "How we began" answers and settings.</li>
+            <li>If your partner was paying for Premium, it ends for you when you unpair.</li>
+        </ul>
+    </section>
+
+    <section id="retention">
+        <h2><span class="num">7</span>How long we keep information</h2>
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Information</th><th>How long we keep it</th></tr></thead>
+                <tbody>
+                    <tr><td>Account and profile</td><td>Until you delete your account.</td></tr>
+                    <tr><td>Things you add</td><td>Until you or your partner delete them, you delete your account, or your shared space is deleted after unpairing.</td></tr>
+                    <tr><td>Shared space after unpairing</td><td>30 days, then permanently deleted unless you pair with each other again.</td></tr>
+                    <tr><td>Deleted doodles</td><td>A small marker without the picture stays for 60 days, so phones that were offline also remove the doodle.</td></tr>
+                    <tr><td>Notification records</td><td>Up to 30 days.</td></tr>
+                    <tr><td>Push tokens</td><td>Until you sign out or delete your account, or 120 days after the app was last used on that phone.</td></tr>
+                    <tr><td>Pairing codes</td><td>Until they're used, or 3 days at most.</td></tr>
+                    <tr><td>Purchase records</td><td>Until you delete your account. Apple and Google keep their own records.</td></tr>
+                    <tr><td>Reasons for leaving</td><td>Kept without anything that identifies you.</td></tr>
+                    <tr><td>Technical logs</td><td>A short time, usually no more than 30 days.</td></tr>
+                    <tr><td>Backups</td><td>Deleted information can stay in encrypted backups for up to 30 days before it's overwritten.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="delete">
+        <h2><span class="num">8</span>Deleting your account</h2>
+        <p>You can delete your account in the app at any time:</p>
+        <ol class="steps">
+            <li>Open Amble and go to <strong>Profile</strong>.</li>
+            <li>Tap <strong>Delete account</strong>.</li>
+            <li>Confirm. It happens straight away.</li>
+        </ol>
+        <p><strong>What's deleted:</strong> your sign-in, profile and profile photo, your connection to your partner, the moments, photos, voice notes, doodles, letters, songs, dreams and answers you added, your notification tokens, and your purchase records with us and RevenueCat.</p>
+        <p><strong>What stays:</strong> things your partner added stay with them. Chapters you created stay in their book without your name.</p>
+        <div class="note">
+            <p><strong>Paying for Premium?</strong> Deleting your account doesn't cancel your subscription. Please cancel it in your App Store or Google Play settings.</p>
+        </div>
+        <p><strong>Don't have the app any more?</strong> Email <a href="mailto:support@amblecouples.app?subject=Delete%20my%20account">support@amblecouples.app</a> from the address on your account with the subject "Delete my account". We may ask you to confirm it's you, and we'll finish within 30 days.</p>
+    </section>
+
+    <section id="rights">
+        <h2><span class="num">9</span>Your rights and choices</h2>
+        <h3>In the app</h3>
+        <ul>
+            <li>Edit your profile, or remove your photo, at any time.</li>
+            <li>Switch sharing of your time, weather or battery on or off.</li>
+            <li>Choose which notifications you get and set quiet hours, or turn notifications off in your phone's settings.</li>
+            <li>Delete anything you've added, unpair, or delete your account.</li>
+        </ul>
+        <h3>By law</h3>
+        <p>Depending on where you live, including the EEA, the UK, California and other US states, you may have the right to:</p>
+        <ul>
+            <li>get a copy of your personal information, including in a portable format;</li>
+            <li>correct it or have it deleted;</li>
+            <li>object to or restrict how we use it;</li>
+            <li>withdraw your consent at any time;</li>
+            <li>not be treated differently for using these rights.</li>
+        </ul>
+        <p>To use any of these rights, email <a href="mailto:support@amblecouples.app">support@amblecouples.app</a>. We'll reply within one month, and we may need to confirm it's you first. In California, someone you authorise can make a request for you.</p>
+        <p><strong>California:</strong> we don't sell or share personal information as the CCPA defines those terms, and we haven't done so in the past 12 months. We don't use sensitive personal information to infer things about you. The categories we collect are listed in section 2.</p>
+        <p>If you're unhappy with how we've handled your information, please tell us. You also have the right to complain to your local data protection authority.</p>
+    </section>
+
+    <section id="security">
+        <h2><span class="num">10</span>How we protect your information</h2>
+        <ul>
+            <li>Everything is encrypted in transit (HTTPS) and encrypted at rest by our hosting provider.</li>
+            <li>Rules on our servers make sure only you and your partner can read your shared space. They're enforced on the server, not just in the app.</li>
+            <li>Photos, voice notes and profile photos are kept in private storage. The app opens them through links that expire after 7 days.</li>
+            <li>Pairing code attempts are limited to stop anyone guessing codes.</li>
+            <li>A copy of your data is kept on your phone so Amble works offline. Signing out clears it from the app, so please protect your phone with a passcode.</li>
+        </ul>
+        <p>No system is perfectly secure. If a breach ever affects your information, we'll tell you and the authorities as the law requires.</p>
+    </section>
+
+    <section id="transfers">
+        <h2><span class="num">11</span>International transfers</h2>
+        <p>Our providers may store and process information in the United States and other countries. When we transfer personal information out of the EEA, the UK or Switzerland, we rely on safeguards such as the European Commission's Standard Contractual Clauses or the EU–US Data Privacy Framework, where our providers use them.</p>
+    </section>
+
+    <section id="children">
+        <h2><span class="num">12</span>Children</h2>
+        <p>Amble is for people aged 16 and over. We don't knowingly collect information from anyone younger. If you think a child has created an account, email <a href="mailto:support@amblecouples.app">support@amblecouples.app</a> and we'll delete it.</p>
+    </section>
+
+    <section id="permissions">
+        <h2><span class="num">13</span>Phone permissions</h2>
+        <p>Amble only asks for a permission when you use the feature that needs it. If you say no, everything else keeps working.</p>
+        <div class="table-wrap">
+            <table>
+                <thead><tr><th>Permission</th><th>Why Amble asks</th></tr></thead>
+                <tbody>
+                    <tr><td>Camera</td><td>To take a photo for a moment, doodle, dream cover or your profile.</td></tr>
+                    <tr><td>Photos</td><td>To pick photos to add.</td></tr>
+                    <tr><td>Microphone</td><td>To record a voice note.</td></tr>
+                    <tr><td>Notifications</td><td>To let you know when your partner sends you something.</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Amble never asks for your location, your contacts or permission to track you.</p>
+    </section>
+
+    <section id="changes">
+        <h2><span class="num">14</span>Changes to this policy</h2>
+        <p>When we update this policy, we'll change the date at the top. If a change is important, we'll tell you in the app or by email before it takes effect.</p>
+    </section>
+
+    <section id="contact">
+        <h2><span class="num">15</span>Contact us</h2>
+        <p>Questions, requests or worries about your privacy? We'd love to help.</p>
+        <p><strong>Email:</strong> <a href="mailto:support@amblecouples.app">support@amblecouples.app</a><br>
+        <strong>Post:</strong> <span class="fill">[Your legal name or company name]</span>, <span class="fill">[Postal address]</span></p>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-inner">
+        <span>© 2026 Amble Couples · <span class="tagline">Every step, together.</span></span>
+        <nav aria-label="Footer">
+            <a href="https://amblecouples.app/privacy">Privacy Policy</a>
+            <a href="https://amblecouples.app/terms">Terms and Conditions</a>
+            <a href="mailto:support@amblecouples.app">support@amblecouples.app</a>
+        </nav>
+    </div>
+</footer>
+
+</body>
+</html>
